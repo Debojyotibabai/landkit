@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.section > h1 {
+  color: #185adb;
+  font-size: 1.6rem;
+}
+.section > p {
+  color: #6279a8;
+  margin: 10px 0 20px;
+}
+
+.section > .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section > .social > .MuiSvgIcon-root {
+  margin-right: 15px;
+  color: #6279a8;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.section > .footer__header {
+  color: #354a74;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+.section > .footer__item {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.section > .footer__item > .footer__link {
+  color: #6279a8;
+  text-decoration: none;
+}

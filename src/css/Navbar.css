@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+}
+.logo {
+  text-decoration: none;
+  color: #185adb;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+.navlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navitem {
+  list-style: none;
+  margin: 0 30px;
+}
+.navlink {
+  color: #6279a8;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.active__navlink {
+  color: #000;
+}
+.buy__button {
+  background-color: #185adb;
+  border: none !important;
+  outline: none !important;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 10px 15px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
