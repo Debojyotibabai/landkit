@@ -115,7 +115,7 @@ const Landing = () => {
             </p>
             <div className="banner__button__section">
               <button className="banner__button banner__button1">
-                View all pages <ArrowForwardIcon />
+                View all pages
               </button>
               <button className="banner__button banner__button2">
                 Documentation
@@ -140,6 +140,7 @@ const Landing = () => {
           })}
         </div>
       </div>
+
       {/* brands */}
       <div className="brands__section">
         <div className="brands main__section">

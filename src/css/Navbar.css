@@ -29,6 +29,11 @@
 .active__navlink {
   color: #000;
 }
+.menu__buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .buy__button {
   background-color: #185adb;
   border: none !important;
@@ -39,4 +44,41 @@
   transition: 0.3s;
   cursor: pointer;
   border-radius: 5px;
+}
+.menu {
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  margin-left: 30px;
+  /* display: none; */
+}
+.menu > .MuiSvgIcon-root {
+  color: #185adb;
+  font-size: 2rem;
+}
+
+/* 480px */
+@media only screen and (max-width: 480px) {
+  .navlist {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    width: 70%;
+    height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    z-index: 9;
+  }
+  .active__navlist {
+    left: 0;
+  }
+  .navitem {
+    margin: 40px 0;
+  }
+  .navlink {
+    font-size: 1.3rem;
+  }
 }

@@ -42,11 +42,11 @@
   border-radius: 7px;
   margin-right: 10px;
   border: none !important;
+  padding: 13px 20px;
 }
 .banner > .left__banner > .banner__button__section > .banner__button1 {
   background-color: #185adb;
   color: #fff;
-  padding: 13px 20px;
 }
 .banner
   > .left__banner
@@ -58,7 +58,6 @@
 .banner > .left__banner > .banner__button__section > .banner__button2 {
   background-color: #e5ecf8;
   color: #185adb;
-  padding: 16px 20px;
   font-weight: bold;
 }
 .banner > .right__banner {
@@ -130,6 +129,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .left__resource {
   width: 50%;
@@ -187,6 +187,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 .right__resource__features > .features > span {
   display: flex;
@@ -250,6 +251,7 @@
 .center > h1 {
   font-size: 1.7rem;
   margin-bottom: 25px;
+  width: 100%;
 }
 .center > p {
   color: #6279a8;
@@ -299,7 +301,6 @@
 .carousel__section > .details > img {
   width: 100px;
 }
-
 .carousel__section > .details > p {
   font-size: 1rem;
   line-height: 1.7;
@@ -324,7 +325,7 @@
   justify-content: space-between;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 .business__support {
   display: flex;
@@ -598,4 +599,211 @@
 }
 .buy > button > .MuiSvgIcon-root {
   margin-left: 10px;
+}
+
+/* 480px */
+@media only screen and (max-width: 480px) {
+  /* banner */
+  .banner {
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+  }
+  .banner > .left__banner {
+    width: 100%;
+    order: 2;
+    margin-top: 40px;
+    align-items: flex-start;
+  }
+  .banner > .left__banner > h1 {
+    font-size: 1.8rem;
+  }
+  .banner > .left__banner > p {
+    margin: 30px 0 30px;
+    width: 100%;
+  }
+  .banner > .right__banner {
+    width: 80%;
+    order: 1;
+    margin-top: 30px;
+  }
+  .banner > .right__banner > img {
+    width: 100%;
+  }
+
+  /* about */
+  .about {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .about__card {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  /* brands */
+  .brands__section {
+    margin-top: 70px;
+  }
+  .brands {
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .brands__card {
+    width: 35%;
+    margin: 15px;
+  }
+
+  .top__section {
+    padding: 50px 0 30px;
+  }
+
+  /* resorce */
+  .resource {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left__resource {
+    width: 100%;
+    max-width: 380px;
+    order: 2;
+    margin-top: 50px;
+  }
+  .right__resource__features > .features {
+    justify-content: flex-start;
+  }
+
+  /* experience */
+  .experience {
+    justify-content: center;
+    width: 100%;
+    padding-top: 70px;
+    flex-direction: column;
+  }
+  .right__experience {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  /* similar */
+  .similar {
+    width: 100%;
+    order: 1;
+  }
+  .similar__heading {
+    font-size: 1.8rem;
+  }
+  .similar__heading__color {
+    font-size: 1.6rem;
+  }
+
+  /* center */
+  .center {
+    width: 90%;
+    padding: 40px 0 70px;
+    text-align: left;
+  }
+  .center > h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .center > .toggle > p {
+    color: #6d86b8;
+    font-size: 1rem;
+    margin: 0 20px;
+  }
+
+  /* carousel */
+  .carousel {
+    width: 95%;
+    box-shadow: none;
+  }
+  .carousel__section {
+    flex-direction: column;
+  }
+  .carousel__section > .carousel__image {
+    width: 170px;
+    height: 170px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .carousel__section > .details {
+    width: 100%;
+    padding: 0 0 10px;
+  }
+  .carousel__section > .details > img {
+    width: 130px;
+  }
+  .carousel__section > .details > p {
+    width: 95%;
+    margin: 10px auto 25px;
+  }
+
+  .middle__section {
+    padding: 20px 0 50px;
+  }
+
+  /* business */
+  .business {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .right__business {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  /* price */
+  .price {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .left__price {
+    width: 100%;
+    transform: none;
+  }
+  .left__price > .price__features {
+    width: 80%;
+  }
+  .right__price {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .bottom__section {
+    padding: 50px 0;
+  }
+
+  /* faq */
+  .faq {
+    align-items: center;
+  }
+  .faq__card {
+    width: 100%;
+    margin: 0;
+    margin: 10px 0 20px;
+  }
+
+  /* buy */
+  .buy {
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  .buy > h1 {
+    font-size: 1.6rem;
+    margin: 30px 0 20px;
+  }
+  .buy > p {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .buy > button {
+    width: 100%;
+  }
+  .buy > button > .MuiSvgIcon-root {
+    margin-left: 10px;
+  }
 }
